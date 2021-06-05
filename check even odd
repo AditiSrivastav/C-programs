@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int Find_Num(int);//function prototype
+int main()
+{
+    int num;
+    printf("Enter a number to check odd or even\n");
+    scanf("%d",&num);
+    if(num%2==0){
+    printf("\n you entered number %d is a even number",num);
+}
+else{
+    printf("\nyou entered number %d is a odd number",num);
+}
+    find_Num(num);//calling the function
+  
+    return 0;
+}
+//create function
+int Find_Num(int num)
+{                                   //function definition
+     return(num%2==0);//return value
+}
