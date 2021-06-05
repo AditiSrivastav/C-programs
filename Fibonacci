@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{         int len,f1=0,f2=1,i=3,f3;                           // Variable declaration 
+	printf("Enter the length of fibonacci series:-"); 
+	scanf("%d",&len);                                   
+	printf("%d\n%d\n",f1,f2);
+	while(i<=len)                                       //Condition check
+	{        f3=f1+f2;
+		printf("%d\n",f3);
+		f1=f2;
+		f2=f3;
+		i++;
+	}
+	getch();
+}
