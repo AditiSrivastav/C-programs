@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main(int argc, char const *argv[])
+{
+    int RowNo,row,space,symbol;
+    printf("Enter the numbers of rows\n");
+    scanf("%d", &RowNo);
+    for(row=1;row<=RowNo;row++)
+    {
+        for(space=1;space<=(RowNo-row);space++)
+            printf(" ");
+
+        for(symbol=1;symbol<=((2*row)-1);symbol++)
+        printf("*");
+        
+        printf("\n");
+    }
+    return 0;
+}
